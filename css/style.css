@@ -74,9 +74,11 @@ ul { list-style: none; margin: 0; padding: 0; }
   display: inline-block;
   padding: 12px 24px;
   border-radius: var(--radius);
+  font-family: inherit;
   font-weight: 600;
   font-size: 0.95rem;
   border: 1px solid transparent;
+  cursor: pointer;
   transition: transform 0.15s ease, background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
 }
 .btn:hover { transform: translateY(-1px); }
@@ -434,6 +436,52 @@ img.project-image {
   gap: 16px;
   flex-wrap: wrap;
   margin-top: 8px;
+}
+
+.email-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.75;
+}
+
+.copy-icon svg { width: 16px; height: 16px; }
+
+.copy-icon .icon-check { display: none; }
+.email-btn.copied .copy-icon { opacity: 1; }
+.email-btn.copied .icon-copy { display: none; }
+.email-btn.copied .icon-check { display: block; }
+
+/* ---------------------------------
+   Toast
+--------------------------------- */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 32px;
+  transform: translate(-50%, 12px);
+  background: var(--color-text);
+  color: var(--color-bg);
+  font-weight: 600;
+  font-size: 0.9rem;
+  padding: 12px 22px;
+  border-radius: 999px;
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  z-index: 1000;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
 
 /* ---------------------------------

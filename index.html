@@ -188,14 +188,23 @@
         Open to internship opportunities and always happy to connect. Feel free to reach out!
       </p>
       <div class="contact-links">
-        <a href="mailto:petermaymin@gmail.com" class="btn btn-primary">petermaymin@gmail.com</a>
+        <button type="button" class="btn btn-primary email-btn" data-copy="petermaymin@gmail.com" aria-label="Copy email address" title="Copy email address">
+          petermaymin@gmail.com
+          <span class="copy-icon" aria-hidden="true">
+            <svg class="icon-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <svg class="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </span>
+        </button>
         <a href="https://www.linkedin.com/in/peter-min-profile" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
   </section>
 
 </main>
-<!-- 
+
+<div class="toast" role="status" aria-live="polite"></div>
+
+<!--
 <footer class="site-footer">
   <div class="container">
     <p>&copy; <span id="year"></span> Peter Min. All rights reserved.</p>
