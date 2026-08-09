@@ -15,18 +15,6 @@
   --radius: 6px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #0d1321;
-    --color-bg-alt: #1d2d44;
-    --color-text: #f0ebd8;
-    --color-text-muted: #9cb1cc;
-    --color-border: #3e5c76;
-    --color-accent: #748cab;
-    --color-accent-dark: #f0ebd8;
-  }
-}
-
 /* ---------------------------------
    Reset & base
 --------------------------------- */
@@ -90,11 +78,6 @@ ul { list-style: none; margin: 0; padding: 0; }
   color: #fff;
 }
 .btn-primary:hover { background: var(--color-accent-dark); }
-
-@media (prefers-color-scheme: dark) {
-  .btn-primary { background: var(--color-text); color: var(--color-bg); }
-  .btn-primary:hover { background: var(--color-accent); color: var(--color-bg); }
-}
 
 .btn-outline {
   border-color: var(--color-border);
